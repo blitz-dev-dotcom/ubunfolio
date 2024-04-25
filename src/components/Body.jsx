@@ -5,9 +5,11 @@ import Bio from './Bio';
 import Skills from './Skills';
 import Contact from './Contact';
 import About from './About';
+import DefaultDiv from './DefaultDiv';
 
 function Body() {
-    const [ReceiveCommand , setReceiveCommand] = useState('')
+    const [ReceiveCommand , setReceiveCommand] = useState('');
+    const [PreCompo,setPreCompo] = useState();
     const date = new Date();
     const currentDate = date.getDate();
     useEffect(()=>{
@@ -27,19 +29,47 @@ function Body() {
     let componentRenderer = (a)=>{
         switch(a){
             case 'bio' : 
-                return <Bio />
+                return (
+                    <>
+                        <DefaultDiv value = {ReceiveCommand}/>
+                        <Bio />
+                    </>
+                )
                 break;
             case 'skills' : 
-                return <Skills />
+                return (
+                    <>
+                        <DefaultDiv value = {ReceiveCommand}/>
+                        <Skills />
+                    </>
+                )
                 break;
             case 'ls' :
-                return <List />
+                return (
+                    <>
+                        <DefaultDiv value = {ReceiveCommand}/>
+                        <List />
+                    </>
+                )
                 break ;
             case 'contact' :
-                return <Contact />
+                return (
+                    <>
+                        <DefaultDiv value = {ReceiveCommand}/>
+                        <Contact />
+                    </>
+                )
                 break ;
             case 'about' :
-                return <About />
+                return (
+                    <>
+                        <DefaultDiv value = {ReceiveCommand}/>
+                        <About />
+                    </>
+                )
+                break ;
+            case 'clear' :
+                return ''
                 break ;
 
             default :
@@ -51,8 +81,11 @@ function Body() {
         <div className='body'>
             <p className='date'>Today is, {DateFormat}</p>
             <h1 className='welcome'>Welcome</h1>
+            {
+                componentRenderer(ReceiveCommand)
+            }
             <Commands  setReceiveCommand= {setReceiveCommand}/>
-            {componentRenderer(ReceiveCommand)}
+            
         </div>
     );
 }

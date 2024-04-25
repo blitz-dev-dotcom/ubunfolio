@@ -24,6 +24,10 @@ function List() {
                 <p>ls</p>
                 <p>List of all commands</p>
             </li>
+            <li>
+                <p>clear</p>
+                <p>To clear the screen</p>
+            </li>
         </ul>
     </div>
   )
