@@ -7,7 +7,8 @@ function Commands(props) {
     const commandRef = useRef();
     function childTOParent(e){
         if(e.keyCode === 13){
-            setReceiveCommand(commandRef.current.value)
+            setReceiveCommand(commandRef.current.value);
+            commandRef.current.value = '';
         }
         else{
             return null

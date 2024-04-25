@@ -5,6 +5,7 @@ import Body from './Body'
 const Terminal = () => {
   return (
     <div className='terminal'>
+      <span className='span'>View in Desktop For better Experience</span>
         <Header />
         <Body />
     </div>

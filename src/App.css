@@ -351,3 +351,40 @@ a:hover{
     font-weight: 400;
     font-style: normal;
 }
+.span{
+    display: none;
+}
+@media (max-width:640px) {
+    .App{
+        height: 100vh;
+        width: 100%;
+    }
+    .terminal{
+        width: 100%;
+    
+    }
+    .body{
+        padding: 0 0 0 0;
+    }
+    .date{
+        padding: 0 0 0 0;
+    }
+    .welcome{
+        padding: 0 0 0 0;
+    }
+    .misword{
+        padding: 0 0 0 0;
+    }
+    .color{
+        gap: 2px;
+    }
+    .color > div{
+        height: 12px;
+        width: 12px;
+    }
+    .span{
+        display: block;
+        color: white;
+    }
+
+}
