@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+*{
+        font-family: "Fira Code", monospace;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      
+}
+/* width */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 .App{
     height: 100vh;
     width: 100%;
@@ -57,10 +87,267 @@
     
 }
 .body{
-    height: 92%;
+    height: 90%;
     width: 100%;
+    padding: 10px 10px 0 10px;
+    overflow-y: scroll;
 }
 .date{
     color: white;
+    padding: 7px 15px 7px 15px;
+}
+.commands{
+    position: relative;
+    height: 90px;
+    width: 80%;
+    padding: 10px;
+}
+.path{
+    height: 50px;
+    display: flex;
+    gap: 10px;
+}
+.pathname{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(22, 187, 22);
+    gap: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     
+}
+.extend{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(84, 84, 222);
+    gap: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#ico{
+    color: white;
+    font-size: 25px;
+}
+#p{
+    font-size: 12px;
+}
+.com{
+    height: 20px;
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    outline:none;
+    color: white;
+    font-weight: 700 !important;
+}
+label{
+    display: flex;
+    justify-content: start;
+    align-items: center;    
+    gap: 10px;
+}
+label > h1{
+    font-size: 16px;
+    color: white;
+}
+/* List */
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 0 0 30px;
+}
+li{
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+/* bio */
+.bio{
+    height: 400px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.img{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.description{
+    height: 20%;
+    width: 100%;
+    color: white;
+}
+.links{
+    height: 20%;
+    width: 100%;
+    color: white;
+}
+
+#verf{
+    color: #0064e0;
+    font-size: 1.2rem;
+}
+.img{
+    display: flex;
+    gap: 20px;
+}
+.Xujfc{
+
+}
+.Xujfc > h4{
+    font-size: 1.3rem;
+    color: white;
+}
+.Xujfc > p{
+    color: white;
+    font-size: 400 !important;
+}
+#me{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.skills{
+
+}
+.skili{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.pro{
+    display: flex;
+    gap: 15px;
+}
+.progress{
+    height: 10px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid rgb(92, 88, 88);
+}
+.progresscolor{
+    height: 10px;
+    border-radius: 10px;
+    background-color: #0064e0;
+}
+#proic{
+    font-size: 1.5rem;
+}
+.misword{
+    color: white;
+    padding: 0 0 0 20px;
+}
+.contact{
+    height: 200px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        'r1 r2 r5'
+        'r3 r4 r5'
+    ;
+    gap: 5px;
+}
+.github{
+    grid-area: r1;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(63, 63, 63, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    gap: 15px   ;
+}
+.linkedin{
+    grid-area: r2;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(63, 63, 63, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    gap: 15px   ;
+}
+.mail{
+    grid-area: r3;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(63, 63, 63, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    gap: 15px   ;
+}
+.phone{
+    grid-area: r4;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(63, 63, 63, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    gap: 15px   ;
+}
+.projects{
+    grid-area: r5;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(63, 63, 63, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    gap: 15px   ;
+}
+#conic{
+    font-size: 2rem;
+    color: rgb(147 197 253);
+}
+a{
+    text-decoration: none;
+    color: rgb(254 240 138);
+}
+a:hover{
+    text-decoration: underline;
+}
+/* about */
+.about{
+    padding: 0 0 0 15px;
+}
+.why > h3{
+    color: rgb(254 240 138);
+    font-size: 1.5rem;
+}
+.why > p{
+    color: white;
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
+}
+.stack > h3{
+    color: rgb(254 240 138);
+    font-size: 1.5rem;
+}
+.stack > p{
+    color: white;
+    font-size: 1rem;
+    padding: 5px 0 5px 0;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+    padding: 10px 0 0 0;
+}
+#techic{
+    font-size: 2rem;
+    color: white;
+}
+.welcome{
+    padding: 0 0 0 15px;
+    font-size: 3.5rem;
+    font-family: "Fascinate Inline", system-ui !important;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
 }
