@@ -13,7 +13,6 @@ function Body() {
     const date = new Date();
     const currentDate = date.getDate();
     useEffect(()=>{
-        console.log(ReceiveCommand);
         componentRenderer(ReceiveCommand);
     },[ReceiveCommand])
     // Function to get the current day of the week
@@ -71,7 +70,6 @@ function Body() {
             case 'clear' :
                 return ''
                 break ;
-
             default :
                 return <div className='misword'>Command Doesnt exist.....</div>
         }
