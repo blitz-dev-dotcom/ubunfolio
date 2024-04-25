@@ -9,7 +9,7 @@ function List() {
                 <p>Show my bio information</p>
             </li>
             <li>
-                <p>skill</p>
+                <p>skills</p>
                 <p>Show my skills</p>
             </li>
             <li>
